@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+/* Responsive Base Styles */
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Home Page */
+.body1 {
+    background-color: rgb(148, 62, 128);
+    padding: 2rem 1rem;
+}
+
+.homeimg {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 2rem 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hometxt1 {
+    font-size: clamp(2rem, 8vw, 3.75rem); /* Responsive font scaling */
+    margin: 1rem 0;
+    color: white;
+    border: 1px solid rgb(252, 247, 247);
+    padding: 0.5rem;
+}
+
+.hometxt2 {
+    font-weight: 500;
+    font-size: clamp(1.25rem, 4vw, 2rem);
+    margin: 1rem 0;
+    color: white;
+}
+
+.hometxt3 {
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+}
+
+/* About Page */
+.body2 {
+    background-color: rgb(189, 5, 5);
+    padding: 2rem 1rem;
+}
+
+.aboutlink {
+    text-align: right;
+    margin: 1rem;
+}
+
+.abouttxt1 {
+    font-size: clamp(2rem, 8vw, 3.125rem);
+    margin: 1rem 0;
+    color: white;
+}
+
+.abouttxt2 {
+    margin: 1.5rem auto;
+    width: 90%;
+    max-width: 800px;
+    text-align: justify;
+    font-size: clamp(1rem, 3vw, 1.1rem);
+}
+
+/* Contact Page */
+.body3 {
+    background-color: rgb(199, 33, 97);
+    padding: 2rem 1rem;
+}
+
+.contactlink {
+    text-align: right;
+    margin: 1rem;
+}
+
+.contacttxt1 {
+    font-size: clamp(2rem, 8vw, 3.125rem);
+    margin: 1rem 0;
+    color: white;
+}
+
+.contacttxt2 {
+    margin: 1.5rem auto;
+    width: 90%;
+    max-width: 800px;
+    text-align: justify;
+    font-size: clamp(1rem, 3vw, 1.1rem);
+}
+
+/* Navigation Links */
+.aboutlink, .contactlink {
+    color: white;
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+/* Media Queries for Fine-Tuning */
+@media (max-width: 768px) {
+    .abouttxt2, .contacttxt2 {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .hometxt1, .abouttxt1, .contacttxt1 {
+        font-size: 2.25rem;
+    }
+    
+    .abouttxt2, .contacttxt2 {
+        text-align: left;
+    }
+}
+
+/* Landscape Orientation for Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .homeimg {
+        max-width: 200px;
+    }
+    
+    .hometxt1, .abouttxt1, .contacttxt1 {
+        font-size: 2rem;
+    }
+}
